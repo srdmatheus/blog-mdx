@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col pt-20">
+    <main className="flex min-h-screen flex-col">
       <h2>Hello World!</h2>
       <div className="h-[2000px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquid
