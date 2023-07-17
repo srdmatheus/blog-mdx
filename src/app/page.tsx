@@ -1,8 +1,14 @@
+import { allPosts } from "contentlayer/generated";
+
+import { PostCard } from "@/components/PostCard";
+
 export default function Home() {
+  const posts = allPosts;
+
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="">
       <h2>Hello World!</h2>
-      <div className="h-[2000px]">
+      <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquid
         asperiores a eum, eos excepturi cumque neque iusto officiis fuga
         possimus molestias dolorem est quis ut mollitia nihil commodi quidem?
@@ -16,6 +22,12 @@ export default function Home() {
         cumque magni deserunt, cum enim ipsam doloribus ullam debitis nobis
         error libero, tempora nihil optio! Suscipit consequuntur esse omnis
         blanditiis eos veniam obcaecati vel libero minima.
+      </div>
+
+      <div>
+        {posts.map((post) => (
+          <PostCard key={post._id} />
+        ))}
       </div>
     </main>
   );

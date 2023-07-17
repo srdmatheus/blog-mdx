@@ -18,9 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-primary text-zinc-700">
         <Header items={headerConfig} />
-        <main className="pt-20">
-          <Layout>{children}</Layout>
-        </main>
+
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
