@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header";
 import "@/styles/globals.css";
 
 export const metadata = {
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-zinc-800 text-zinc-50">{children}</body>
+      <body className="bg-primary text-zinc-700">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
