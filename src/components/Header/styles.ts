@@ -18,6 +18,8 @@ export const Container = tw.header`
 `;
 
 export const Content = tw.div`
+  container
+  mx-auto
   flex
   h-full
   w-full
