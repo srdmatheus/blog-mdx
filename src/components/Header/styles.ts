@@ -40,8 +40,11 @@ export const List = tw.ul`
 `;
 
 export const ListItem = tw.li`
-  transition-colors
+  
+  px-2
+  hover:bg-primary
+  transition-all
   duration-300
   ease-in-out
-  hover:text-link
+  
 `;

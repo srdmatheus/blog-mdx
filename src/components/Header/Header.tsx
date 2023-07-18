@@ -20,7 +20,14 @@ export const Header = ({ items }: HeaderProps) => {
           <S.List>
             {items.mainNav.map(({ title, href }) => (
               <S.ListItem key={href}>
-                <Link href={href}>{title}</Link>
+                <Link
+                  className="rounded-sm ring-link ring-offset-4 ring-offset-primary transition-all duration-300 ease-in-out hover:text-link hover:ring-2
+                  focus:bg-primary
+                  focus:ring-2"
+                  href={href}
+                >
+                  {title}
+                </Link>
               </S.ListItem>
             ))}
           </S.List>
