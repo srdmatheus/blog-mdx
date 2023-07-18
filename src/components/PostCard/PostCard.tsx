@@ -27,7 +27,7 @@ export const PostCard = () => {
         </div>
 
         <time className="text-sm opacity-70">
-          15 / dez / 23 • 3 min. de leitura
+          15 / dez / 23 · 3 min. de leitura
         </time>
 
         <h2 className="mt-2 max-w-md text-ellipsis text-base font-semibold">

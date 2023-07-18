@@ -6,7 +6,7 @@ export const Profile = () => {
   return (
     <S.Container>
       <S.Content>
-        <S.Location>Terra do pão de queijo • Brasil</S.Location>
+        <S.Location>Terra do pão de queijo, Brasil</S.Location>
         <S.Title>
           Ei, Matheus Ribeiro aqui{" "}
           <span className="inline-block origin-[70%_70%] animate-wave">👋🏼</span>
@@ -23,7 +23,7 @@ export const Profile = () => {
         width={176}
         height={176}
         priority
-        className="rounded-full"
+        className="hidden rounded-full sm:block"
       />
     </S.Container>
   );
