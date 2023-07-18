@@ -3,14 +3,17 @@ import Link from "next/link";
 
 export const PostCard = () => {
   return (
-    <Link href="#">
-      <div className="relative h-80 w-full">
+    <Link
+      href="#"
+      className="rounded-lg ring-link ring-offset-4 transition-all duration-300 hover:ring-2 focus:ring-2"
+    >
+      <div className="relative h-48 w-full">
         <Image
           src="/assets/images/image.png"
           fill
           alt="title"
           priority
-          className="rounded-xl object-cover object-center"
+          className="rounded-lg object-cover object-center"
         />
       </div>
 
@@ -23,11 +26,11 @@ export const PostCard = () => {
           ))}
         </div>
 
-        <time className="text-zinc-600">
+        <time className="text-sm text-zinc-600">
           15 de maio de 2023 • 3 minutos de leitura
         </time>
 
-        <h2 className="mt-2 max-w-md text-ellipsis text-2xl font-medium text-zinc-700">
+        <h2 className="mt-2 max-w-md text-ellipsis text-xl font-medium text-zinc-700">
           O que é Dependency Injection e como aplicar no ReactJs
         </h2>
 
