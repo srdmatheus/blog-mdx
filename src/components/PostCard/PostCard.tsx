@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { Tag } from "@/components/Tag";
+
 export const PostCard = () => {
   return (
     <Link
@@ -20,9 +22,7 @@ export const PostCard = () => {
       <div className="pt-3">
         <div className="mb-3 flex flex-wrap gap-2">
           {["TypeScript", "Next.js"].map((tag) => (
-            <span key={tag} className="text-sm font-medium text-indigo-500">
-              {tag}
-            </span>
+            <Tag key={tag}>{tag}</Tag>
           ))}
         </div>
 
