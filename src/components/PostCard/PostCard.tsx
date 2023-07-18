@@ -26,15 +26,15 @@ export const PostCard = () => {
           ))}
         </div>
 
-        <time className="text-sm text-zinc-600">
-          15 de maio de 2023 • 3 minutos de leitura
+        <time className="text-sm opacity-70">
+          15 / dez / 23 • 3 min. de leitura
         </time>
 
-        <h2 className="mt-2 max-w-md text-ellipsis text-xl font-medium text-zinc-700">
+        <h2 className="mt-2 max-w-md text-ellipsis text-base font-semibold">
           O que é Dependency Injection e como aplicar no ReactJs
         </h2>
 
-        <p className="mt-3 text-zinc-600">
+        <p className="mt-3 text-ellipsis text-sm opacity-70">
           Vamos aprender à como aplicar esse conceito tão importante no
           React.js!
         </p>
