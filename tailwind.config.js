@@ -21,10 +21,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        permanent: ["Permanent Marker", "cursive"],
-        foldit: ["Foldit", "cursive"]
-      },
       colors: {
         primary: "rgb(250, 250, 250)",
         secondary: "#2e3038",

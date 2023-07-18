@@ -1,8 +1,15 @@
+import { Inter } from "next/font/google";
+
 import { headerConfig } from "@/config";
 
 import { Header } from "@/components/Header";
 import "@/styles/globals.css";
 import { Layout } from "@/components/Layout";
+
+export const inter = Inter({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -16,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-primary text-zinc-700">
+      <body className={`${inter.className}  text-neutral-800`}>
         <Header items={headerConfig} />
 
         <Layout>{children}</Layout>
