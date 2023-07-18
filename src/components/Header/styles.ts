@@ -8,21 +8,21 @@ export const Container = tw.header`
   w-full
   items-center
   border-b
-  border-zinc-300
-  bg-zinc-200/50
+  border-neutral-200
+  bg-neutral-100
   shadow-sm
   backdrop-blur-sm
   transition-all
-  duration-200
+  duration-300
   ease-out
 `;
 
 export const Content = tw.div`
-  container
-  mx-auto
   flex
+  mx-auto
   h-full
   w-full
+  max-w-4xl
   items-center
   justify-between
   px-4

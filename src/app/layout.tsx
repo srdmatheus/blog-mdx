@@ -1,7 +1,5 @@
 import { Inter } from "next/font/google";
 
-import { headerConfig } from "@/config";
-
 import { Header } from "@/components/Header";
 import "@/styles/globals.css";
 import { Layout } from "@/components/Layout";
@@ -22,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className}  text-neutral-800`}>
-        <Header items={headerConfig} />
+    <html lang="pt-BR">
+      <body className={`${inter.className} text-neutral-800`}>
+        <Header />
 
         <Layout>{children}</Layout>
       </body>

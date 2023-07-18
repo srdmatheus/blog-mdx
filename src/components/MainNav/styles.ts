@@ -1,5 +1,6 @@
-import tw from "tailwind-styled-components";
+import Link from "next/link";
 
+import tw from "tailwind-styled-components";
 export const Nav = tw.nav`
   flex
   items-center
@@ -8,14 +9,26 @@ export const Nav = tw.nav`
 
 export const List = tw.ul`
   flex
-  gap-4
+  gap-2
 `;
 
 export const ListItem = tw.li`
-  px-2
-  hover:bg-primary
   transition-all
   duration-300
   ease-in-out
+`;
+
+export const NavLink = tw(Link)`
+  py-1 px-2
+  rounded-sm
+
+  transition-all
+  duration-300
+  ease-in-out
+
+  hover:ring-2
+  hover:text-link
+  ring-link
   
+  focus:ring-2
 `;
