@@ -11,7 +11,6 @@ export const Container = tw.header`
   border-neutral-200
   bg-neutral-100
   shadow-sm
-  backdrop-blur-sm
   transition-all
   duration-300
   ease-out
