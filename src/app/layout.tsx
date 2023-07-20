@@ -1,8 +1,12 @@
 import { Inter } from "next/font/google";
 
+import { socialLinks } from "@/config";
+
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import "@/styles/globals.css";
 import { Layout } from "@/components/Layout";
+
+import "@/styles/globals.css";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -23,8 +27,13 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${inter.className} text-neutral-800`}>
         <Header />
+        <Layout>
+          <div className="pt-20">{children}</div>
 
-        <Layout>{children}</Layout>
+          <div className="pt-10">
+            <Footer items={socialLinks.socialMedia} />
+          </div>
+        </Layout>
       </body>
     </html>
   );
