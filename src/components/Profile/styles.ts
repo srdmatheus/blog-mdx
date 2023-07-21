@@ -17,7 +17,8 @@ export const Location = tw.span`
 `;
 
 export const Title = tw.h1`
-  text-2xl
+  text-3xl
+  tracking-tight
   font-bold
   leading-none
 `;
@@ -26,4 +27,4 @@ export const TextAbout = tw.p`
   mt-3
   text-base
   leading-relaxed
-`
+`;

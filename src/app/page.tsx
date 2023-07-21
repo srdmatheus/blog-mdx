@@ -12,13 +12,12 @@ export default function Home() {
       <div className="py-12">
         <Profile />
       </div>
-      <div>
-        <Grid>
-          {posts.map((post) => (
-            <PostCard key={post._id} />
-          ))}
-        </Grid>
-      </div>
+
+      <Grid>
+        {posts.map((post) => (
+          <PostCard key={post._id} />
+        ))}
+      </Grid>
     </main>
   );
 }
