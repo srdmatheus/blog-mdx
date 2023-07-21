@@ -2,6 +2,8 @@
 
 import { MainNavType } from "@/types";
 
+import { List } from "@/components/List";
+
 import { ToggleButton } from "./components";
 import { useMainNav } from "./hooks";
 import * as S from "./styles";
@@ -13,13 +15,13 @@ export const MainNav = ({ mainNav }: MainNavType) => {
     <>
       {!isOpenMenu && (
         <S.Nav>
-          <S.List>
+          <List.Root>
             {mainNav.map(({ title, href }) => (
-              <S.ListItem key={href}>
+              <List.Item key={href}>
                 <S.NavLink href={href}>{title}</S.NavLink>
-              </S.ListItem>
+              </List.Item>
             ))}
-          </S.List>
+          </List.Root>
         </S.Nav>
       )}
 

@@ -2,7 +2,8 @@ import Link from "next/link";
 
 import tw from "tailwind-styled-components";
 export const Nav = tw.nav`
-  flex
+  hidden
+  md:flex
   items-center
   justify-between
 `;
