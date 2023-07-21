@@ -12,9 +12,11 @@ export const Footer = ({ items }: FooterProps) => {
   const actualYear = new Date().getFullYear();
   return (
     <S.Container>
-      <S.Copy>Alguns direitos reservados © {actualYear}</S.Copy>
+      <S.Copy data-testid="copySection">
+        Alguns direitos reservados © {actualYear}
+      </S.Copy>
 
-      <S.ListSociaLinks>
+      <S.ListSociaLinks data-testid="linkSection">
         {items.map((item) => (
           <S.ItemSocialLinks key={item.name}>
             <Link
