@@ -17,7 +17,7 @@ export const PostCard = ({ post }: PostCardProps) => {
   const formattedDate = formatDate(date);
 
   return (
-    <S.Container href={`/post/${slug}`}>
+    <S.Container href={`/artigos/${slug}`}>
       <S.ImageContainer>
         <Image
           src={image}
