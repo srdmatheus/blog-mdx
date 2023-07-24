@@ -19,7 +19,7 @@ export const Location = tw.span`
 export const Title = tw.h1`
   text-3xl
   tracking-tight
-  font-bold
+  font-black
   leading-none
 `;
 
