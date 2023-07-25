@@ -1,9 +1,9 @@
-import * as S from "./styles";
-
 type ListItemsProps = {
   children: React.ReactNode;
 };
 
 export const ListItem = ({ children }: ListItemsProps) => {
-  return <S.Item>{children}</S.Item>;
+  return (
+    <li className="transition-all duration-300 ease-in-out">{children}</li>
+  );
 };
