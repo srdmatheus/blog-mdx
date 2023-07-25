@@ -24,5 +24,5 @@ export const Content = tw.div`
   max-w-4xl
   items-center
   justify-between
-  px-4
+  px-6
 `;
