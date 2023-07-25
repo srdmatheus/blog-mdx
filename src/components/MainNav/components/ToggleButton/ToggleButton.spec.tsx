@@ -1,6 +1,6 @@
 import { act, fireEvent, render, screen } from "@testing-library/react";
 
-import { ToggleButton } from "./ToggleButton";
+import { ToggleButton } from "./index";
 
 const handleToggleMenu = jest.fn();
 
