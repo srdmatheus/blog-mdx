@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 
 import { GithubLogo } from "@/components/Icons";
 
-import { Footer } from "./Footer";
+import { Footer } from "./index";
 const items: SocialMedia[] = [
   {
     name: "Home",
