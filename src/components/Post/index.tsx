@@ -2,9 +2,10 @@ import Image from "next/image";
 
 import { BlogPost } from "@/types";
 
+import { Mdx } from "@/components/Mdx";
+
 import { formatDate } from "@/utils/functions";
 
-import { Mdx } from "../Mdx";
 
 type PostProps = {
   post: BlogPost;
