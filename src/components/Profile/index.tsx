@@ -1,21 +1,21 @@
 import Image from "next/image";
 
-import * as S from "./styles";
-
 export const Profile = () => {
   return (
-    <S.Container>
-      <S.Content>
-        <S.Location>Terra do pão de queijo, Brasil</S.Location>
-        <S.Title>
+    <div className="flex items-center justify-between">
+      <div className="max-w-md">
+        <span className="text-sm leading-none opacity-60">
+          Terra do pão de queijo, Brasil
+        </span>
+        <h1 className="text-3xl font-black leading-none tracking-tight">
           Ei, Matheus Ribeiro aqui{" "}
           <span className="inline-block origin-[70%_70%] animate-wave">👋🏼</span>
-        </S.Title>
-        <S.TextAbout>
+        </h1>
+        <p className="mt-3 text-base leading-relaxed">
           Um Desenvolvedor Front End morando na capital Mineira. Construindo
           coisas para o mundo pela internet.
-        </S.TextAbout>
-      </S.Content>
+        </p>
+      </div>
 
       <Image
         src="https://github.com/srdmatheus.png"
@@ -25,6 +25,6 @@ export const Profile = () => {
         priority
         className="hidden rounded-full sm:block"
       />
-    </S.Container>
+    </div>
   );
 };
