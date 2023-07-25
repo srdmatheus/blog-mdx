@@ -1,12 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { BlogPost } from "@/types";
 
 import { Tag } from "@/components/Tag";
 
 import { formatDate } from "@/utils/functions";
-
-import * as S from "./styles";
 
 type PostCardProps = {
   post: BlogPost;
@@ -17,8 +16,11 @@ export const PostCard = ({ post }: PostCardProps) => {
   const formattedDate = formatDate(date);
 
   return (
-    <S.Container href={`/artigos/${slug}`}>
-      <S.ImageContainer>
+    <Link
+      href={`/artigos/${slug}`}
+      className="rounded-lg ring-link ring-offset-4 transition-all duration-300 hover:ring-2 focus:ring-2"
+    >
+      <div className="relative h-48 w-full">
         <Image
           src={image}
           fill
@@ -26,21 +28,23 @@ export const PostCard = ({ post }: PostCardProps) => {
           priority
           className="rounded-lg object-cover object-center"
         />
-      </S.ImageContainer>
+      </div>
 
-      <S.Content>
-        <S.TagsContainer>
+      <div className="pt-3">
+        <div className="mb-3 flex flex-wrap gap-2">
           {tags?.map((tag) => <Tag key={tag}>{tag}</Tag>)}
-        </S.TagsContainer>
+        </div>
 
-        <S.Time>
+        <time className="text-sm opacity-70">
           {formattedDate} · {readingTime} min. de leitura
-        </S.Time>
+        </time>
 
-        <S.Title>{title}</S.Title>
+        <h2 className="mt-2 max-w-md text-ellipsis text-base font-semibold">
+          {title}
+        </h2>
 
-        <S.Description>{description}</S.Description>
-      </S.Content>
-    </S.Container>
+        <p className="mt-3 text-ellipsis text-sm opacity-70">{description}</p>
+      </div>
+    </Link>
   );
 };
