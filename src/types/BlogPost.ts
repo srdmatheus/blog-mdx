@@ -1,3 +1,5 @@
+import { MDX } from "contentlayer/core";
+
 export type BlogPost = {
   _id: string;
   slug: string;
@@ -5,10 +7,7 @@ export type BlogPost = {
   description: string;
   date: string;
   readingTime: number;
-  body: {
-    code: string;
-    raw: string;
-  };
+  body: MDX;
   image: string;
   tags?: string[] | undefined;
 };

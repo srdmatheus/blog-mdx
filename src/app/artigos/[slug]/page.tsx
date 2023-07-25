@@ -1,6 +1,6 @@
 import { PostService } from "@/services";
 
-import { Mdx } from "@/components/Mdx";
+import { Post } from "@/components/Post";
 
 type PostPageProps = {
   params: {
@@ -11,5 +11,7 @@ type PostPageProps = {
 export default function PostPage({ params }: PostPageProps) {
   const post = PostService.getBySlug(params.slug);
 
-  return post?.body.code && <Mdx code={post?.body.code} />;
+  if (!post) return null;
+
+  return <Post post={post} />;
 }
