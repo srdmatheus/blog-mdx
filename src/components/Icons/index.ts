@@ -4,5 +4,6 @@ export {
   X as CloseIcon,
   List as OpenIcon,
   LinkedinLogo,
-  GithubLogo
+  GithubLogo,
+  ArrowLeft
 } from "@phosphor-icons/react";
