@@ -6,8 +6,6 @@ import { Mdx } from "@/components/Mdx";
 
 import { formatDate } from "@/utils/functions";
 
-import { BackButton } from "./components/BackButton";
-
 type PostProps = {
   post: BlogPost;
 };
@@ -18,9 +16,6 @@ export const Post = ({ post }: PostProps) => {
 
   return (
     <>
-      <div className="mb-3">
-        <BackButton />
-      </div>
       <div className="flex flex-col items-center justify-center">
         <div className="relative max-h-80 w-full sm:h-[30rem]">
           <Image

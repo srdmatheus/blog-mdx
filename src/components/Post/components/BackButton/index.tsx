@@ -5,7 +5,7 @@ export const BackButton = () => {
   return (
     <Link
       href="/"
-      className="group flex items-center justify-start gap-2 text-sm ring-link transition-all duration-300 hover:ring-2"
+      className="group flex items-center justify-center gap-2 rounded-md p-3 text-sm ring-link transition-all duration-300 focus:ring-2"
     >
       <ArrowLeft
         size={18}

@@ -1,6 +1,7 @@
 import { PostService } from "@/services";
 
 import { Post } from "@/components/Post";
+import { BackButton } from "@/components/Post/components/BackButton";
 
 type PostPageProps = {
   params: {
@@ -13,5 +14,12 @@ export default function PostPage({ params }: PostPageProps) {
 
   if (!post) return null;
 
-  return <Post post={post} />;
+  return (
+    <>
+      <div className="mb-3 flex justify-start">
+        <BackButton />
+      </div>
+      <Post post={post} />
+    </>
+  );
 }
