@@ -5,3 +5,23 @@
 * {
   outline: none;
 }
+
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c0c0c0;
+  border-radius: 8px;
+}
+
+pre::-webkit-scrollbar {
+  height: 6px;
+}
