@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 
 import { socialLinks } from "@/config";
 
+import { BackToTop } from "@/components/BackToTop";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Layout } from "@/components/Layout";
@@ -33,7 +34,9 @@ export default function RootLayout({
           <div className="pt-10">
             <Footer items={socialLinks.socialMedia} />
           </div>
+          <BackToTop />
         </Layout>
+        
       </body>
     </html>
   );

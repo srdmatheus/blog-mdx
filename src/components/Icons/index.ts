@@ -5,5 +5,6 @@ export {
   List as OpenIcon,
   LinkedinLogo,
   GithubLogo,
-  ArrowLeft
+  ArrowLeft,
+  ArrowUp
 } from "@phosphor-icons/react";
