@@ -1,22 +1,11 @@
 import { PostService } from "@/services";
-import { PaginationData } from "@/types";
 
-import { Grid } from "@/components/Grid";
 import { Pagination } from "@/components/Pagination";
-import { PostCard } from "@/components/PostCard";
+import { PostsList } from "@/components/PostsList";
 import { Profile } from "@/components/Profile";
 
 export default function Home() {
-  const { posts } = PostService.getAll();
-
-  const paginationData: PaginationData = {
-    data: {
-      currentPage: 1,
-      nextPage: "/45a",
-      prevPage: "/asdad",
-      totalPages: 5
-    }
-  };
+  const { posts, currentPage, numbPages } = PostService.getAll();
 
   return (
     <main>
@@ -24,13 +13,14 @@ export default function Home() {
         <Profile />
       </div>
 
-      <Grid>
-        {posts.map((post) => (
-          <PostCard key={post.slug} post={post} />
-        ))}
-      </Grid>
+      <PostsList posts={posts} />
       <div className="mt-6">
-        <Pagination data={paginationData.data} />
+        <Pagination
+          currentPage={currentPage}
+          nextPage="/page/2"
+          totalPages={numbPages}
+          prevPage="/"
+        />
       </div>
     </main>
   );
