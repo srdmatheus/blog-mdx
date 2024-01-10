@@ -12,7 +12,7 @@ export const Profile = () => {
           <span className="inline-block origin-[70%_70%] animate-wave">👋🏼</span>
         </h1>
         <p className="mt-3 text-base leading-relaxed">
-          Um Desenvolvedor Front End morando na capital Mineira. Construindo
+          Um Desenvolvedor Front-end morando em Belo Horizonte. Construindo
           coisas para o mundo pela internet.
         </p>
       </div>
